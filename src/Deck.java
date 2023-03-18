@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Deck {
 
-    //An arraylist to hold the deck of Cards
     private ArrayList<Card> deck = new ArrayList<>();
 
     public Deck() {
@@ -62,7 +61,7 @@ public class Deck {
         deck.clear();
     }
 
-    public void reloadDeckFromUsedCards (Deck used) {
+    public void reloadDeckFromUsedCards(Deck used) {
         this.addCards(used.getCards());
         this.shuffle();
         used.emptyDeck();

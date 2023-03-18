@@ -31,18 +31,15 @@ public class Player extends Person {
         if (decision == 1) {
             //hit the deck
             this.hit(deck, usedCards);
-            //return if they have blackjack or busted
             if (this.getHand().calculatedValue() > 20) {
             } else {
                 this.makeDecision(deck, usedCards, input);
             }
 
-        } else if (decision == 3){
+        } else if (decision == 3) {
             System.out.println("Thanks for playing.");
             System.exit(0);
-        }
-
-        else {
+        } else {
             System.out.println("You stand.");
         }
 
